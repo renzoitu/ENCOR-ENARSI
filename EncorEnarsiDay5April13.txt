@@ -338,11 +338,11 @@ STEP3: CONFIGURING VRF INTERFACES ON PE ROUTERS:
 R4:PEa
 config t
  int Ethernet1/1
-   ip vrf forwarding clientBPIa
+   !ip vrf forwarding clientBPIa
    ip address 10.1.1.2 255.255.255.252
    no shut
  int Ethernet1/0
-   ip vrf forwarding clientPNBa
+   !ip vrf forwarding clientPNBa
    ip address 10.1.1.2 255.255.255.252
    no shut
    no shut
@@ -518,10 +518,10 @@ CE engineers will do this!
 
 ****
 On all PNB(eigrp) routers:
-config t
- router eigrp 90
-  network 10.0.0.0
-  no auto-summary
+	config t
+	 router eigrp 90
+	  network 10.0.0.0
+	  no auto-summary
 ****
 On all BPI(ospf) routers:
 config t
