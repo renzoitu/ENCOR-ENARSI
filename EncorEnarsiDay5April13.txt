@@ -729,7 +729,7 @@ Tasks
 The operations team started configuring network devices for a new site. Complete the configurations to achieve these goals:
 
 1. Configure Rapid PVST+ on SW20.
-
+sh 
 2. The trunk between SW20 and SW30 is not operational. Troubleshoot the issue and ensure PC3 can ping PC1 
 (10.10.100.10) across the link.
 
@@ -1433,6 +1433,7 @@ int e1/3
  no ip add
 int e1/2
  ip add 10.0.23.2 255.255.255.0
+ no sh
 int e1/1
  ip add 10.0.2.2 255.255.255.0
 no shut
@@ -1466,6 +1467,6 @@ no shut
 
 
 
-
+  
 
 
